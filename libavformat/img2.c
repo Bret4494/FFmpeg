@@ -393,7 +393,7 @@ static int write_packet(AVFormatContext *s, AVPacket *pkt)
     AVCodecContext *codec = stream->codec;
     int i;
 
-    int ts = av_rescale_q(pkt->pts, stream->time_base, AV_TIME_BASE_Q);
+    int64_t ts = av_rescale_q(pkt->pts, stream->time_base, AV_TIME_BASE_Q);
 
     if (!img->is_pipe) {
         if (av_get_frame_filename2(filename, sizeof(filename),

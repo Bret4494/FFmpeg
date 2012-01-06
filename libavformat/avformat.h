@@ -2088,7 +2088,7 @@ attribute_deprecated int av_get_frame_filename(char *buf, int buf_size,
  * @return 0 if OK, -1 on format error
  */
 int av_get_frame_filename2(char *buf, int buf_size,
-                           const char *path, int number, int ts);
+                           const char *path, int number, int64_t ts);
 
 /**
  * Check whether filename actually is a numbered sequence generator.

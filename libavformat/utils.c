@@ -3820,7 +3820,7 @@ int find_info_tag(char *arg, int arg_size, const char *tag1, const char *info)
 #endif
 
 int av_get_frame_filename2(char *buf, int buf_size,
-                          const char *path, int number, int ts)
+                          const char *path, int number, int64_t ts)
 {
     const char *p;
     char *q, buf1[20], c;
